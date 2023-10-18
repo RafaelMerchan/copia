@@ -1,0 +1,44 @@
+section:nth-child(2n) {
+  background-color: aliceblue;
+}
+
+section:nth-child(2n+1) {
+  background-color: gray;
+}
+
+/* Flexbox */
+main {
+   /* Modo de colocar los elementos internos de manera flexible */
+   display: flex;
+   /* Eje primario con la dirección de los elementos */
+   flex-direction: row;
+   /* Separación entre filas */
+   row-gap: 0.5rem;
+   /* Separación entre columnas */
+   column-gap: 0.5rem; 
+   /* Los elementos ocupan el espacio de acuerdo a su tamaño */
+   flex-wrap: wrap;
+   /* Los elementos están distribuidos uniformemente en el eje primario  */
+   justify-content: space-between;
+   /* Los elementos se estiran para llenar el eje transversal */
+   align-items: stretch;
+}
+
+#datosgenerales {
+  flex-basis: 100%;
+  flex-grow: 1;
+}
+#habilidadespersonales, #conocimientos {
+  flex-basis: 49%;
+  flex-grow: 1;
+}
+
+#trabajosanteriores, #habilidadesprogramacion, #proyectosanteriores {
+  flex-basis: 32%;
+  flex-grow: 1;
+}
+
+#idiomas, #medioscontacto {
+  flex-basis: 49%;
+  flex-grow: 1;
+}
